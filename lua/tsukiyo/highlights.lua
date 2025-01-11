@@ -97,7 +97,7 @@ end
 local function TerminalColors(colors)
 	vim.g.terminal_color_0 = colors.bg
 	vim.g.terminal_color_1 = colors.red
-	vim.g.terminal_color_2 = colors.green
+	vim.g.terminal_color_2 = Util.darken(colors.green, 0.3)
 	vim.g.terminal_color_3 = colors.yellow
 	vim.g.terminal_color_4 = colors.blue
 	vim.g.terminal_color_5 = colors.magenta
@@ -105,7 +105,7 @@ local function TerminalColors(colors)
 	vim.g.terminal_color_7 = colors.white
 	vim.g.terminal_color_8 = Util.darken(colors.gray, 0.5)
 	vim.g.terminal_color_9 = Util.lighten(Util.blend(colors.red, colors.magenta, 0.2), 0.5)
-	vim.g.terminal_color_10 = Util.lighten(colors.green, 0.5)
+	vim.g.terminal_color_10 = Util.lighten(colors.green, 0.7)
 	vim.g.terminal_color_11 = Util.lighten(colors.yellow, 0.2)
 	vim.g.terminal_color_12 = Util.lighten(colors.blue, 0.5)
 	vim.g.terminal_color_13 = Util.lighten(colors.magenta, 0.5)

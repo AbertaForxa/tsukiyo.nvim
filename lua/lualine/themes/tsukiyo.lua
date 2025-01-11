@@ -1,37 +1,34 @@
-local C = require("tsukiyo.pallete")
+local colors = require("tsukiyo.pallete").colors
 
-local tsukiyo = {}
-
-tsukiyo.normal = {
-	a = { bg = C.pallete.blue, fg = C.pallete.bg, gui = "bold" },
-	b = { bg = C.pallete.bg, fg = C.pallete.red },
-	c = { bg = C.pallete.bg, fg = C.pallete.red },
+return {
+	normal = {
+		a = { fg = colors.red, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.red, bg = colors.bg },
+		c = { fg = colors.red, bg = colors.bg },
+	},
+	command = {
+		a = { fg = colors.purple, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.purple, bg = colors.bg },
+	},
+	insert = {
+		a = { fg = colors.pink_fuchsia, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.pink_fuchsia, bg = colors.bg },
+	},
+	visual = {
+		a = { fg = colors.yellow, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.yellow, bg = colors.bg },
+	},
+	terminal = {
+		a = { fg = colors.yellow, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.yellow, bg = colors.bg },
+	},
+	replace = {
+		a = { fg = colors.blue, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.blue, bg = colors.bg },
+	},
+	inactive = {
+		a = { fg = colors.fg, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.fg, bg = colors.bg },
+		c = { fg = colors.fg, bg = colors.bg },
+	},
 }
-
-tsukiyo.insert = {
-	a = { bg = C.pallete.green, fg = C.pallete.bg, gui = "bold" },
-	b = { bg = C.pallete.gray, fg = C.pallete.white },
-}
-
-tsukiyo.command = {
-	a = { bg = C.pallete.fg, fg = C.pallete.bg, gui = "bold" },
-	b = { bg = C.pallete.gray, fg = C.pallete.white },
-}
-
-tsukiyo.visual = {
-	a = { bg = C.pallete.red, fg = C.pallete.bg, gui = "bold" },
-	b = { bg = C.pallete.gray, fg = C.pallete.white },
-}
-
-tsukiyo.replace = {
-	a = { bg = C.pallete.red, fg = C.pallete.bg, gui = "bold" },
-	b = { bg = C.pallete.gray, fg = C.pallete.white },
-}
-
-tsukiyo.inactive = {
-	a = { bg = C.pallete.gray, fg = C.pallete.bg, gui = "bold" },
-	b = { bg = C.pallete.gray, fg = C.pallete.white },
-	c = { bg = C.pallete.bg, fg = C.pallete.white },
-}
-
-return tsukiyo
