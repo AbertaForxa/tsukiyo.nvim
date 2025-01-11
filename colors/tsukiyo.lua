@@ -9,8 +9,6 @@ function M.setup()
 	vim.g.colors_name = "tsukiyo"
 end
 
-if vim.g.colors_name then
-	M.setup()
-end
+M.setup()
 
 return M
