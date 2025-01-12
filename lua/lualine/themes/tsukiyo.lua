@@ -1,4 +1,4 @@
-local colors = require("tsukiyo.pallete").colors
+local colors = require("tsukiyo.pallete").get_colors()
 
 return {
 	normal = {
